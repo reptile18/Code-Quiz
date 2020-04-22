@@ -2,9 +2,38 @@
 <html>
   <head>
     <title>Code Quiz</title>
-    <link rel="Stylesheet" href="style.css" type="text/css" />
+    <!--<link rel="Stylesheet" href="style.css" type="text/css" />-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </head>
   <body>
+    
+    <main class="container">
+      <a class="float-left" href="view_highscores.html">View Highscores</a>
+      <div class="float-right">Time: <span id="time">0</span></div>
+      <section id="cardIntro" class="card">
+        <h1 class="card-title">Coding Quiz Challenge</h1>
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds.</p>
+        <button id="buttonStartQuiz" class="btn btn-primary">Start Quiz</button>
+      </section>
+      <section class="card d-none" id="cardQuestion">
+        <h1 id="h1Question" class="card-title">Placeholder for Question</h1>
+        <div class="container card-body">
+          <div id="listAnswers" class="row">
+
+          </div>
+        </div>
+      </section>
+      <section class="card d-none" id="cardScore">
+        <h1 class="card-title">All done!</h1>
+        <div class="card-body">
+          <h2>Your final score is: <span id="spanScore">0</span> of <span id="spanNumProblems"></span></h2>
+          <form id="formSaveScore">
+            <label for="initials">Enter initials: </label><input type="text" id="initals" /><button id="buttonInitials" class="btn btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
