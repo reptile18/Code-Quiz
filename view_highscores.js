@@ -21,6 +21,8 @@ function renderHighScores() {
   }
   else {
     highScores = JSON.parse(highScores);
+    highScores.sort((first,second) => second.score - first.score);
+
     for (var i = 0; i < highScores.length; i++) {
       let score = highScores[i];
       let tempScore = document.createElement("li");
