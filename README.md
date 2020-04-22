@@ -35,6 +35,9 @@ Open index.html.
 2. Click the High Scores link in the top left
 3. Observe the score and initials entered previously appear
 
+* High Scores
+1. View the high scores and ensure that the scores are sorted highest to lowest
+
 ## Authors
 
 * **Johnny Li** - *Initial work* - [reptile18](https://github.com/reptile18)
