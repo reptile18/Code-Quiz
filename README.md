@@ -1,5 +1,5 @@
 # Code Quiz
-
+![alt text](https://github.com/reptile18/Code-Quiz/blob/master/Assets/screenshot.png "code quiz")
 A demonstration of a web-based coding quiz using Javascript Web APIs, events, and client-side storage.
 
 ## Getting Started
