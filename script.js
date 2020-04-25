@@ -166,9 +166,15 @@ problems = [
       'document.querySelector("#myDiv").textContent = "Hello World"',
       'document.querySelectorAll("#myDiv")[0].textContent = "Hello World"',
       'document.getElementById("#myDiv").textcontent = "Hello World"',
+      'A and B',
+      'A, B, and C',
+      'B and C',
+      'C and D',
+      'C, D, and E',
+      'D and E',
       "All of the above"
     ],
-    correct: 4
+    correct: 10
   },
   { 
     question: 'What is the correct way to add a css class myClass to an element <div id="myElement"></div>?',
@@ -187,6 +193,25 @@ problems = [
       "All of the above"
     ],
     correct: 8
+  },
+  { 
+    question: 'What of the following statements is true regarding the JQuery API?',
+    answers: [
+      'JQuery works by default in most modern browsers.',
+      'JQuery must always be imported using a script tag or some other method.',
+      'JQuery only works if a backend server API is used.',
+      'JQuery must always be imported in the css file.',
+      'JQuery only works on mobile browsers.',
+      'JQuery only works on PC browsers.',
+      'A, B, and C',
+      'A, C, and E',
+      'B and C',
+      'B and D',
+      'B, C, and E',
+      'C and D',
+      "All of the above"
+    ],
+    correct: 1
   },
   { 
     question: 'What is the correct way to add a click event to a button <button id="myButton"></button>?',
@@ -229,6 +254,28 @@ problems = [
     correct: 13
   },
   { 
+    question: 'What is the correct method to call for animating a div\'s width <div id=\"divStretch\"></div>',
+    answers: [
+      '$("#divStretch").animate({width:1000px});',
+      '$("#divStretch").width = "1000px;"',
+      '$(this).animate("#divStretch","width");',
+      '$("#divStretch").style.width = "1000px";',
+      '$("#divStretch").animate("width","1000px");',
+      '$("#imgBkgd").css("background-image","url(\'image.jpg\')");',
+      'A and B',
+      'A and C',
+      'A, B, E, and F',
+      'A, C, and E',
+      'B and F',
+      'B, C, and F',
+      'C and E',
+      'C and F',
+      'D and F',
+      "All of the above"
+    ],
+    correct: 0
+  },
+  { 
     question: 'What is the correct way to set a div <div id="imgBkgd"></div>\'s background image css property to image.jpg?',
     answers: [
       '$("#imgBkgd").background-image(url("image.jpg"));',
@@ -237,7 +284,7 @@ problems = [
       'document.getElementById("#imgBkgd").style.backgroundImage = "image.jpg";',
       'document.querySelector("#imgBkgd").backgroundImage = "url(\'image.jpg\')";',
       '$("#imgBkgd").css("background-image","url(\'image.jpg\')");',
-      'A and B',
+      'A and F',
       'A, B, E, and F',
       'A, C, and E',
       'B and C',
